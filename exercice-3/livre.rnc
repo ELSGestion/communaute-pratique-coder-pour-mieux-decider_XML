@@ -1,0 +1,17 @@
+default namespace = ""
+
+start =
+  element livre {
+    element chapitre {
+      attribute num { xsd:integer },
+      titre,
+      para,
+      element section {
+        attribute media { xsd:NCName },
+        titre,
+        para
+      }+
+    }
+  }
+titre = element titre { text }
+para = element para { text }

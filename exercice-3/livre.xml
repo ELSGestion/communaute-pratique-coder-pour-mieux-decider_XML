@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="livre.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<livre>
+  <chapitre num="1">
+    <titre>Chapitre 1</titre>
+    <para>Introduction</para>
+    <section media="numerique">
+      <titre>Section 1</titre>
+      <para>texte <gras>web</gras></para>
+    </section>
+    <section media="papier">
+      <titre>Section 1</titre>
+      <para>texte papier</para>
+    </section>
+  </chapitre>
+</livre>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="livre">
+      <element name="chapitre">
+        <attribute name="num">
+          <data type="integer"/>
+        </attribute>
+        <ref name="titre"/>
+        <zeroOrMore>
+          <ref name="para"/>
+        </zeroOrMore>
+        <oneOrMore>
+          <element name="section">
+            <attribute name="media">
+              <choice>
+                <value>numerique</value>
+                <value>papier</value>
+              </choice>
+            </attribute>
+            <ref name="titre"/>
+            <ref name="para"/>
+          </element>
+        </oneOrMore>
+      </element>
+    </element>
+  </start>
+  <define name="titre">
+    <element name="titre">
+      <text/>
+    </element>
+  </define>
+  <define name="para">
+    <element name="para">
+      <zeroOrMore>
+        <choice>
+          <text/>
+          <ref name="gras"/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+  
+  <define name="gras">
+    <element name="gras">
+      <text/>
+    </element>
+  </define>
+</grammar>

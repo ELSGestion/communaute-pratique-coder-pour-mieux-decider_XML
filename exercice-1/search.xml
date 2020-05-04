@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search:search xmlns:search="http://marklogic.com/appservices/search">
+  <search:response total="144" start="36" page-length="12">
+    <search:result index="1" uri="...">
+      ...
+    </search:result>
+  </search:response>
+</search:search>
+

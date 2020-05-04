@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" id="tdm">
+   <ul>
+      <li>
+         <a href="javascript:gotoTitle('t1-1');">Titre 1</a>
+         <ul/>
+      </li>
+      <li>
+         <a href="javascript:gotoTitle('t2-1');">Titre 2</a>
+         <ul>
+            <li>
+               <a href="javascript:gotoTitle('t2-2');">Titre 2</a>
+               <ul>
+                  <li>
+                     <a href="javascript:gotoTitle('t3-1');">Titre 3</a>
+                     <ul>
+                        <li>
+                           <a href="javascript:gotoTitle('t4-1');">Titre 4</a>
+                           <ul/>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </li>
+   </ul>
+</div>
